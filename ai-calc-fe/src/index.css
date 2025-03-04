@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    250deg,
+    rgba(1, 1, 19, 1) 0%,
+    rgb(40, 41, 46) 17%,
+    rgb(120, 7, 133) 51%,
+    rgb(6, 113, 12) 61%,
+    rgb(45, 4, 75) 74%,
+    rgba(2, 15, 10, 1) 87%,
+    rgba(17, 32, 20, 1) 100%
+  );
+  background-size: 200% 200%;
+  animation: test 5s ease-in-out infinite alternate;
+}
+
+@keyframes test {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+  transition: background 0.4s ease-in-out;
+  z-index: 10;
+}
+
+header.scroll {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header ul > * {
+  text-decoration: none;
+  color: rgba(229, 226, 226, 0.9);
+  font-size: 22px;
+  transition: transform 0.2s ease-in, background 0.2s ease-in;
+}
+
+header ul .active {
+  color: white;
+  transform: scale(1.1);
+}
+header ul > *:hover {
+  transform: scale(1.1);
+  color: white;
+}

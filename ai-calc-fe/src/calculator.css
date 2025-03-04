@@ -1,0 +1,117 @@
+.calculator {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 80px 80px;
+}
+
+.controlPanel,
+.colorSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.controlPanel button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: rgb(6, 52, 157);
+  color: white;
+  font-size: 24px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-out, font-size 0.2s ease-in-out;
+}
+.controlPanel button:hover {
+  transform: scaleX(1.2) scaleY(1.09);
+}
+
+.controlPanel .colorSelector .color {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+.controlPanel .colorSelector .color:hover {
+  transform: scale(1.1);
+}
+.controlPanel .colorSelector .color.active {
+  border: 5px solid rgb(53, 205, 199);
+}
+
+.controlPanel .colorSelector .eraser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controlPanel .colorSelector .eraser img {
+  height: 35px;
+  width: 35px;
+}
+.controlPanel .colorSelector .eraser.active img {
+  border-bottom: 5px solid rgb(53, 205, 199);
+}
+
+.canvas-container {
+  width: 100%;
+  height: 70rem;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+.input_feedback {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgba(152, 149, 149, 0.88);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.input_feedback:focus {
+  border: 2px solid white;
+}
+::placeholder {
+  color: white;
+}
+
+.feedback {
+  margin-top: 20px;
+}
+
+.feedback > p {
+  font-size: 20px;
+}
+.feedback button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: rgb(6, 52, 157);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-out, font-size 0.2s ease-in-out;
+}
+.feedback button:hover {
+  transform: scaleX(1.2) scaleY(1.09);
+}
+
+::file-selector-button {
+  padding: 5px 10px;
+  background: rgb(6, 52, 157);
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
