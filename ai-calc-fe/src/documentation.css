@@ -1,0 +1,131 @@
+.docs-container p {
+  font-size: 25px;
+}
+.docs-container h1 {
+  font-size: 34px;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.docs-container span {
+  font-weight: bold;
+  color: rgb(36, 94, 231);
+}
+
+.docs-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 30px;
+  gap: 2rem;
+  opacity: 0;
+  animation: loadingAnimation 1s ease-in-out forwards;
+}
+@keyframes loadingAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+.docs-container .intro h1 {
+  font-size: 40px;
+}
+
+.docs-container .intro > p {
+  font-size: 25px;
+}
+
+.docs-container .intro div {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  width: 30rem;
+  border-radius: 5px;
+}
+
+.docs-container .intro div ul {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.introduction p {
+  padding-left: 40px;
+}
+
+.tech-stack img {
+  height: 48px;
+  width: 48px;
+}
+
+.tech-stack > div {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  margin-left: 30px;
+}
+
+.tech-stack > div h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.tech-stack > div > div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tech-stack > div > div h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.tech-stack > div > div p {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.working ul {
+  padding-left: 40px;
+}
+
+.working li {
+  font-size: 24px;
+}
+.working > div div {
+  margin-block: 20px;
+}
+
+.features ul {
+  padding-left: 40px;
+}
+
+.features li {
+  font-size: 24px;
+  margin-block: 10px;
+}
+
+.features span {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(29, 224, 29);
+}
+
+.improvements ul {
+  padding-left: 40px;
+}
+
+.improvements li {
+  font-size: 24px;
+  margin-block: 10px;
+}
+
+.improvements span {
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+}

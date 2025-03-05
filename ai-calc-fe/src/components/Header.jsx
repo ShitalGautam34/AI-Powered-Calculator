@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../index.css";
-import { useEffect } from "react";
 
 const Header = () => {
   const navLinks = [
