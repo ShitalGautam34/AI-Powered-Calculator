@@ -26,14 +26,14 @@ const Result = ({ latexString, getFeedback }) => {
         color: "white",
         border: "5px solid white",
         padding: "10px 15px",
-        height: "70rem",
+        minHeight: "70rem",
         width: "85vw",
         marginTop: "2rem",
         background: "#ffffff33",
         backdropFilter: "blur(5px)",
       }}
     >
-      <p style={{ color: "yellow" }}>
+      <p style={{ color: "yellow", fontSize: "24px" }}>
         Note: This AI Calculator is currently under development and may make
         mistakes.
       </p>

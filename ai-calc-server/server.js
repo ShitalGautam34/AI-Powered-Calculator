@@ -27,5 +27,5 @@ app.post("/gemini", async (req, res) => {
   const result = await model.generateContent(prompt); //sending the image to the Gemini API
   const response = await result.response;
   res.send(response.text()); //sending the Gemini response back to the front end
-  console.log(response);
+  console.log(response.text());
 });
